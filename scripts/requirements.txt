@@ -1,0 +1,7 @@
+beautifulsoup4==4.3.2
+lxml==3.3.5
+html5lib==1.0b8
+pandas==0.19.1
+requests==2.3.0
+demographics
+nameparser
