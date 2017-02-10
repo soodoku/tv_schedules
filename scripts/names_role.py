@@ -1,27 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-"""
-Next step is to get the gender and race of 'created_by', 'directed_by', 
-'starring', 'presented_by', 'executive_producers', 'producers', 'composers'.
-Two complications:
-
- a. There can be multiple names per field. 
- b. There are a few Python packages for it though none is very good but ok for 
-    now --- just Google and use what is best.
-
-One proposed solution:
- i. Create a CSV with just unique names with the following fields:
-
-     ```
-     name, field, row
-     XYZ, executive_producers, 10
-     ```
- ii. Then use Python package/API to get gender and race (I don't see any
-     package for race --- I can do this at my end so don't spend too much time
-     on this.)
- """
-
 import argparse
 import re
 import pandas as pd

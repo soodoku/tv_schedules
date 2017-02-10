@@ -2,7 +2,7 @@
 # coding: utf-8
 
 """
-Scrape all of the US television schedule data from Wikipedia at:
+Scrapes all of the US television schedule data from Wikipedia at:
 https://en.wikipedia.org/wiki/Category:United_States_television_schedules
 Final format: Year, Channel, Day, Start Time, End Time
 """

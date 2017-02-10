@@ -2,7 +2,7 @@
 # coding: utf-8
 
 """
-Create a new CSV that uses data from the names file and the show file with the
+Creates a new CSV that uses data from the names file and the show file with the
 following fields:
 
 for each year (aggregate over each year):

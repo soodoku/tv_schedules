@@ -103,7 +103,7 @@ name,field,index,gender,race
 
 - ``name``      Name of the person
 - ``field``     Role on the TV program
-- ``index``		Index number in the input
+- ``index``		  Index number in the input
 - ``gender``    Gender of the name from demographics dataset
 - ``race``      Race of the name from demographics dataset
 
@@ -137,7 +137,7 @@ The valid value of gender column can be string 'male'/'female' or proportion of 
 
 Similar to the gender, the race column can be the string of 'black'/'white' or the proportion of black in float between 0--1.0 or the percent of black between 0--100.
 
-### Proportion calculation result
+### Calculating Proportions
 
 Creates a new CSV that uses data from the names file and the show file with the
 following fields:
