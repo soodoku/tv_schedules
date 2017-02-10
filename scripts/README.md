@@ -91,7 +91,7 @@ optional arguments:
 python names_role.py -s us_tv_names_sub.csv -o ../data/us_tv_schedules_names.csv ../data/us_tv_schedules_meta.csv
 ```
 
-### Substitions list file
+### Substitutions list file
 
 There are to columns in the CSV substitution list, first column is the regular expression to be matched in the name field and another column is the substitution string.
 
@@ -133,13 +133,13 @@ optional arguments:
 python race_gender_over_time.py ..\data\tv_names_race_gender.csv -o ..\data\us_tv_schedules_prop_R.csv -m ..\data\us_tv_schedules_meta.csv -g proportion_female -r cs2000_pctblack
 ```
 
-The valid value of gender column can be the string of 'male'/'female' or the proportion of female in float between 0 - 1.0 or the percent of female between 0 - 100.
+The valid value of gender column can be string 'male'/'female' or proportion of female as float between 0--1.0 or the percent of female between 0--100.
 
-Similar to the gender, the race column can be the string of 'black'/'white' or the proportion of black in float between 0 - 1.0 or the percent of black between 0 - 100.
+Similar to the gender, the race column can be the string of 'black'/'white' or the proportion of black in float between 0--1.0 or the percent of black between 0--100.
 
 ### Proportion calculation result
 
-Create a new CSV that uses data from the names file and the show file with the
+Creates a new CSV that uses data from the names file and the show file with the
 following fields:
 ```
 for each year (aggregate over each year):
