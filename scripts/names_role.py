@@ -36,7 +36,7 @@ def extract_name(names, subregex=None):
                 before = a
                 a = re.sub(r'\b' + s[0], s[1], a)
                 if a != before:
-                    print("'%s' ==> '%s': '%s' ==> '%s'" % (s[0], s[1],
+                    print("'{0!s}' ==> '{1!s}': '{2!s}' ==> '{3!s}'".format(s[0], s[1],
                                                             before, a))
         a = re.split(r'[,&/•]', a)
         for b in a:
@@ -46,7 +46,7 @@ def extract_name(names, subregex=None):
             else:
                 # print out one-word name
                 if len(c):
-                    print("%s ==> '%s'" % (names, c))
+                    print("{0!s} ==> '{1!s}'".format(names, c))
     return r
 
 
