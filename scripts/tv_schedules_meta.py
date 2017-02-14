@@ -45,7 +45,7 @@ def table_to_2d_dict(table, with_link=True):
             if with_link:
                 links = col.findall('.//a')
                 if len(links):
-                    col_data += "<<%s>>" % links[0].get('href')
+                    col_data += "<<{0!s}>>".format(links[0].get('href'))
             while row_i in result and col_i in result[row_i]:
                 col_i += 1
             for i in range(row_i, row_i + rowspan):
@@ -69,7 +69,7 @@ def _unpack(row, kind='td'):
         elts = row.findall('.//th')
     else:
         elts = []
-    elts += row.findall('.//%s' % kind)
+    elts += row.findall('.//{0!s}'.format(kind))
     cols = []
     for e in elts:
         try:
