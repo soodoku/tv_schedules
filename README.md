@@ -68,7 +68,7 @@ Data are from [TV Schedules Data on Wikipedia](https://en.wikipedia.org/wiki/Cat
     - [Percentage of Black Directors over time](figs/black_producers_over_time.pdf)
     - [Percentage of Female Directors over time](figs/female_producers_over_time.pdf)
     - [Percentage of Black Cast Members over time](figs/black_producers_over_time.pdf)
-    - [Percentage of Female Cast Members over time](figs/female_producers_over_time.pdf)
+    - [Percentage of Female Cast Members over time](figs/female_cast_members_over_time.pdf)
 
 ### Authors
 
