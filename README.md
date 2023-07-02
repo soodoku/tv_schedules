@@ -1,4 +1,4 @@
-## What and Who is on Network television?
+## What and Who is on Network Television?
 
 Using data on TV schedules and meta data on TV programs from Wikipedia, we explore popularity of different genres of shows over time, and the race and gender composition of directors, producers, creators, presenters, cast members, music composers, etc. 
 
