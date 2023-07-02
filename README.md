@@ -1,14 +1,14 @@
 ## What and Who is on Network Television?
 
-Using data on TV schedules and meta data on TV programs from Wikipedia, we explore popularity of different genres of shows over time, and the race and gender composition of directors, producers, creators, presenters, cast members, music composers, etc. 
+Using data on TV schedules and metadata on TV programs from Wikipedia, we explore the popularity of different genres of shows over time, and the race and gender composition of directors, producers, creators, presenters, cast members, music composers, etc. 
 
 A small preview of what we find: 
 
-Percentage of shows that are on crime has gone from 0 to about 10% over the last 70 years. 
+The percentage of shows that are on crime has gone from 0 to about 10% over the last 70 years. 
 
 ![percentage of crime shows over time](figs/crime_over_time.png)
 
-Percentage of black cast members, presenters, directors, and producers has remained less than 5%, scraping 0 some years. Trends for gender are slightly more hopeful. Percentage of female cast members has risen from around 30% to about 40% in recent years. Percentage of female directors has risen at a steady clip from 0 to about 10%, while the most pleasing trend has been among female producers, which has risen from 0 to about 35%.
+The percentage of black cast members, presenters, directors, and producers has remained less than 5%, scraping 0 some years. Trends for gender are slightly more hopeful. The percentage of female cast members has risen from around 30% to about 40% in recent years. The percentage of female directors has risen at a steady clip from 0 to about 10%, while the most pleasing trend has been among female producers, which has risen from 0 to about 35%.
 
 ![percentage of female producers over time](figs/female_producers_over_time.png)
 
@@ -38,10 +38,10 @@ For running the Python scripts at your end, see the [readme](scripts/README.md)
 
 ### Data
 
-Data are from [TV Schedules Data on Wikipedia](https://en.wikipedia.org/wiki/Category:United_States_television_schedules) and gray boxes (informational boxes on the right hand side of Wikipedia pages of TV programs)
+Data are from [TV Schedules Data on Wikipedia](https://en.wikipedia.org/wiki/Category:United_States_television_schedules) and gray boxes (informational boxes on the right-hand side of Wikipedia pages of TV programs)
 
 * [US TV Schedules](data/us_tv_schedules.csv)
-    - **fields:** no (id), year (years show was on air), period (prime time, daytime), day (day of the week), season (Fall, Winter, ...), channel (channel name), channel_optional (misc.), program (program name), begin (start time), end (end time)
+    - **fields:** no (id), year (years show was on the air), period (prime time, daytime), day (day of the week), season (Fall, Winter, ...), channel (channel name), channel_optional (misc.), program (program name), begin (start time), end (end time)
 
 * [US TV Schedules plus info. from the gray box of the program](data/us_tv_schedules_meta.csv)
     - **additional fields:** meta_link (link), genre (Crime, Game show, etc.), running_time, meta (JSON of all the meta fields), audio_format, picture_format, created_by, directed_by, starring, presented_by, executive_producers, producers, composers
@@ -57,7 +57,7 @@ Data are from [TV Schedules Data on Wikipedia](https://en.wikipedia.org/wiki/Cat
     - Gender and Race of Producers, Presenters, etc. over time 
         - [Python pkg. imputation](data/us_tv_schedules_prop.csv) 
         - [R packages imputation + Python imputation](data/us_tv_schedules_prop_R.csv) 
-            + year, prop1_female_producers (proportion of shows with at least one female producer = total number of shows with at least one female producer/total number of shows), prop1_female_directors (proportion of shows with at least one female director), prop1_female_creators (proportion of shows with at least one female creator), prop_female_producers (total number of female producers divided by total number of producers), prop_female_directors (total number of female directors divided by total number of directors), prop_female_creators (total number of female creators divided by total number of creators), prop_female_cast (total number of female cast members/total number of cast members), prop_female_presenters (total number of female presenters divided by total number of presenters),  prop1_black_producers, ...
+            + year, prop1_female_producers (proportion of shows with at least one female producer = total number of shows with at least one female producer/total number of shows), prop1_female_directors (proportion of shows with at least one female director), prop1_female_creators (proportion of shows with at least one female creator), prop_female_producers (total number of female producers divided by the total number of producers), prop_female_directors (total number of female directors divided by the total number of directors), prop_female_creators (total number of female creators divided by the total number of creators), prop_female_cast (total number of female cast members/total number of cast members), prop_female_presenters (total number of female presenters divided by the total number of presenters),  prop1_black_producers, ...
 
 * A Few Graphs:
     - [Percentage of Crime Shows Over time](figs/crime_over_time.pdf)
